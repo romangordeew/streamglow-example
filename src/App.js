@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ConnectWallet from "./components/ConnectWallet";
+import CreateStreamForm from "./components/CreateStreamForm";
+import StreamList from "./components/StreamList";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ConnectWallet/>
+      <CreateStreamForm/>
+      <StreamList/>
     </div>
   );
 }
